@@ -18,10 +18,11 @@ export default class CreateBookings extends Component {
 
         this.state = {
             username: '',
-            seatBooked: '',
+            seatBooked: '1',
             numberOfSeats: '',
             date: new Date(),
-            users: []
+            users: [], 
+            seats: []
         }
     }
 
@@ -41,6 +42,9 @@ export default class CreateBookings extends Component {
 
         $('.cinema-seats .seat').on('click', function() {
             $(this).toggleClass('active');
+            
+            this.seats = document.getElementsByClassName('seat').innerText;
+            
         });
 
         console.log(this.state.seatBooked);
@@ -55,7 +59,7 @@ export default class CreateBookings extends Component {
 
     onChangeSeatBooked(e) {
         this.setState({
-            seatBooked: e.currentTarget.textContent
+            seatBooked: e.target.value
         });
     }
 
