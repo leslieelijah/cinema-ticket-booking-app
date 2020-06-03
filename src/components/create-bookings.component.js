@@ -123,6 +123,15 @@ export default class CreateBookings extends Component {
                     />
               </div>
               <div className="form-group">
+                <label>Seats booked: <small>Please select seat from 1 to 30 and separate by a comma for more seats, e.g. 1,2,3</small> </label>
+                <input  type="text"
+                    required
+                    className="form-control"
+                    value={this.state.seatBooked}
+                    onChange={this.onChangeSeatBooked}
+                    />
+              </div>
+              <div className="form-group">
                 <label>Number of Seats: </label>
                 <input 
                     type="text" 

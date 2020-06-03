@@ -115,8 +115,8 @@ export default class EditBookings extends Component {
           </select>
         </div>
         <div className="form-group"> 
-          <label>Seats booked: </label>
-          <input  type="text"
+        <label>Seats booked: <small>Please select seat from 1 to 30 and separate by a comma for more seats, e.g. 1,2,3</small> </label>
+        <input  type="text"
               required
               className="form-control"
               value={this.state.seatBooked}
