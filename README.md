@@ -1,4 +1,5 @@
-## Cinema ticket booking app
+Cinema ticket booking app - ReactJs
+
 In the project directory, you can run:
 
 ### `npm start`
