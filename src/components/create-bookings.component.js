@@ -42,6 +42,8 @@ export default class CreateBookings extends Component {
         $('.cinema-seats .seat').on('click', function() {
             $(this).toggleClass('active');
         });
+
+        console.log(this.state.seatBooked);
     
     }
 
@@ -53,7 +55,7 @@ export default class CreateBookings extends Component {
 
     onChangeSeatBooked(e) {
         this.setState({
-            seatBooked: e.target.value
+            seatBooked: e.currentTarget.textContent
         });
     }
 
@@ -111,10 +113,9 @@ export default class CreateBookings extends Component {
                 </select>
               </div>
               <div className="form-group"> 
-                
-                 
                     <TheatreSeatLayout 
-                    
+                    value={this.state.numberOfSeats}
+                    onChange={this.onChangeNumberOfSeats}
                     />
               </div>
               <div className="form-group">
