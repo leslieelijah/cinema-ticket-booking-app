@@ -1,17 +1,4 @@
-CINEMA TICKET BOOKING APPLICATION
-
-REACTJS FRONT-END
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-####################################
-
-NODEJS AND EXPRESSJS BACKEND
+# Nodejs and Express backend
 
 To start the server:
 
